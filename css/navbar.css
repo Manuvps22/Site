@@ -56,7 +56,7 @@ nav {
         width: 100vw !important;
         background: var(--modal); /* color */
         /* position: relative; */
-        box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);
+        box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);
     }
 
     .dropdown-content a {
@@ -102,24 +102,34 @@ nav {
 
     .slide-down {
         display: block;
-        animation: slideDown2 .5s forwards;
+        animation: mobSlideDown .5s forwards, mobSlideDownShadow .5s forwards;
         transition: all .5s ease-in-out;
     }
     
     .slide-up {
         display: block;
-        animation: slideUp2 .5s forwards;
+        animation: mobSlideUp .5s forwards, mobSlideUpShadow .5s forwards;
         transition: all .5s ease-in-out;
     }
     
-    @keyframes slideDown2 {
+    @keyframes mobSlideDown {
         0% {transform: translateY(-100vh);}
         100% {transform: translateY(-.5vh);}
     }
+
+    @keyframes mobSlideDownShadow {
+        50% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);}
+        100% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);}
+    }
     
-    @keyframes slideUp2 {
+    @keyframes mobSlideUp {
         0% {transform: translateY(-.5vh);}
         100% {transform: translateY(-100vh);}
+    }
+
+    @keyframes mobSlideUpShadow {
+        0% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);}
+        30% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);}
     }
 
     .lunesImg {
