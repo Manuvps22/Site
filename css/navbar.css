@@ -146,12 +146,12 @@ nav {
         align-items: baseline;
     }
 
-    nav ul {
+    /* nav ul {
         display: flex;
         align-items: center;
         background:none;
         justify-content: flex-end;
-    }
+    } */
     
     nav div:first-child h1 {
         line-height: 0;
@@ -271,6 +271,7 @@ nav div:first-child h1 {
     color: var(--navSubTxt);
     margin-left: .5rem;
     margin-right: .5rem;
+    margin-bottom: .2rem;
 }
 
 ul {
