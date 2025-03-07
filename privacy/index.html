@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/backtotop.css">
     <link rel="stylesheet" href="../css/colors.css">
     <link href="https://file.myfontastic.com/5Rye3JbqszJpTmQUpnavVP/icons.css" rel="stylesheet"/>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/> -->
     <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -65,10 +64,7 @@
     <!--Title-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7684974889836472"
      crossorigin="anonymous"></script>
-</head>
-
-<body>
-
+     
     <style>
         .navTxt2 {
             color: var(--text);
@@ -93,7 +89,58 @@
         .separator {
             color: var(--text);
         }
+        
+        /* Added styles for the privacy policy section */
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .privacy-container h1 {
+            color: var(--text);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .privacy-container h2 {
+            color: var(--text);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--subTxt);
+            padding-bottom: 5px;
+        }
+        
+        .privacy-container p {
+            margin-bottom: 15px;
+        }
+        
+        .privacy-container ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .privacy-container li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+            display: list-item;
+        }
+        
+        .privacy-date {
+            font-style: italic;
+            color: var(--subTxt);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .contact-email {
+            font-weight: bold;
+        }
     </style>
+</head>
+
+<body>
     
     <div class="container">
 
@@ -166,54 +213,58 @@
         <!-- BACK TO TOP BUTTON-->
 
         <div class="space"></div>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Effective Date: March 7 2025</p>
         
-        <h2>1. Information We Collect</h2>
-        <p>We collect the following types of information:</p>
-        <ul>
-            <li>Personal Information: Name, email address, and any other details you provide during account registration.</li>
-            <li>Billing Information: All billing details are processed and stored by Stripe; we do not store any payment data on-site.</li>
-            <li>Technical Information: IP addresses, browser type, and device details, primarily for security and abuse prevention.</li>
-        </ul>
-        
-        <h2>2. How We Use Your Information</h2>
-        <p>We use collected information to:</p>
-        <ul>
-            <li>Provide and maintain our services.</li>
-            <li>Improve customer support and resolve issues.</li>
-            <li>Ensure security and prevent fraudulent activities.</li>
-            <li>Comply with legal obligations.</li>
-        </ul>
-        
-        <h2>3. How We Share Your Information</h2>
-        <p>We do not sell or rent your information. However, we may share data with:</p>
-        <ul>
-            <li>Payment Processors: Stripe handles all billing-related information.</li>
-            <li>Service Providers: Partners who help us operate and maintain our services.</li>
-            <li>Legal Authorities: When required by law or to protect our rights.</li>
-        </ul>
-        
-        <h2>4. Cookies and Tracking Technologies</h2>
-        <p>We use cookies to enhance your experience. You can manage cookie settings in your browser.</p>
-        
-        <h2>5. Data Security</h2>
-        <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is 100% secure.</p>
-        
-        <h2>6. Your Rights</h2>
-        <p>You have the right to access, correct, or delete your personal data. Contact us at panel@lunes.host for any requests.</p>
-        
-        <h2>7. Third-Party Links</h2>
-        <p>Our website may contain links to third-party sites. We are not responsible for their privacy practices.</p>
-        
-        <h2>8. Changes to This Policy</h2>
-        <p>We may update this policy periodically. Continued use of our services constitutes agreement to the revised policy.</p>
-        
-        <h2>9. Contact Us</h2>
-        <p>If you have any questions, contact us at panel@lunes.host.</p>
+        <!-- Properly formatted privacy policy section -->
+        <div class="privacy-container">
+            <h1>Privacy Policy</h1>
+            <p class="privacy-date">Effective Date: March 7, 2025</p>
+            
+            <h2>1. Information We Collect</h2>
+            <p>We collect the following types of information:</p>
+            <ul>
+                <li>Personal Information: Name, email address, and any other details you provide during account registration.</li>
+                <li>Billing Information: All billing details are processed and stored by Stripe; we do not store any payment data on-site.</li>
+                <li>Technical Information: IP addresses, browser type, and device details, primarily for security and abuse prevention.</li>
+            </ul>
+            
+            <h2>2. How We Use Your Information</h2>
+            <p>We use collected information to:</p>
+            <ul>
+                <li>Provide and maintain our services.</li>
+                <li>Improve customer support and resolve issues.</li>
+                <li>Ensure security and prevent fraudulent activities.</li>
+                <li>Comply with legal obligations.</li>
+            </ul>
+            
+            <h2>3. How We Share Your Information</h2>
+            <p>We do not sell or rent your information. However, we may share data with:</p>
+            <ul>
+                <li>Payment Processors: Stripe handles all billing-related information.</li>
+                <li>Service Providers: Partners who help us operate and maintain our services.</li>
+                <li>Legal Authorities: When required by law or to protect our rights.</li>
+            </ul>
+            
+            <h2>4. Cookies and Tracking Technologies</h2>
+            <p>We use cookies to enhance your experience. You can manage cookie settings in your browser.</p>
+            
+            <h2>5. Data Security</h2>
+            <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is 100% secure.</p>
+            
+            <h2>6. Your Rights</h2>
+            <p>You have the right to access, correct, or delete your personal data. Contact us at <span class="contact-email">panel@lunes.host</span> for any requests.</p>
+            
+            <h2>7. Third-Party Links</h2>
+            <p>Our website may contain links to third-party sites. We are not responsible for their privacy practices.</p>
+            
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update this policy periodically. Continued use of our services constitutes agreement to the revised policy.</p>
+            
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions, contact us at <span class="contact-email">panel@lunes.host</span>.</p>
+        </div>
     </div>
-  <footer id="footer" class="footer">
+    
+    <footer id="footer" class="footer">
         <div class="footerWrap">
             <div class="footerDes">
                 <div class="footerLeft">
