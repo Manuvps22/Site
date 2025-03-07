@@ -96,12 +96,14 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
         }
         
         .privacy-container h1 {
             color: var(--text);
             text-align: center;
             margin-bottom: 20px;
+            font-size: 2.2em;
         }
         
         .privacy-container h2 {
@@ -110,21 +112,30 @@
             margin-bottom: 15px;
             border-bottom: 1px solid var(--subTxt);
             padding-bottom: 5px;
+            font-size: 1.5em;
         }
         
         .privacy-container p {
             margin-bottom: 15px;
+            color: var(--text);
         }
         
+        /* Fixed list styles to prevent overlap */
         .privacy-container ul {
             margin-left: 20px;
             margin-bottom: 20px;
+            padding-left: 20px;
+            list-style-position: outside;
         }
         
         .privacy-container li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            padding-left: 10px;
             list-style-type: disc;
             display: list-item;
+            line-height: 1.5;
+            word-wrap: break-word;
+            position: relative;
         }
         
         .privacy-date {
@@ -136,6 +147,22 @@
         
         .contact-email {
             font-weight: bold;
+        }
+        
+        /* Ensure list items don't overlap in different screen sizes */
+        @media (max-width: 768px) {
+            .privacy-container {
+                padding: 15px;
+            }
+            
+            .privacy-container ul {
+                padding-left: 25px;
+            }
+            
+            .privacy-container li {
+                padding-left: 5px;
+                margin-bottom: 12px;
+            }
         }
     </style>
 </head>
@@ -222,9 +249,15 @@
             <h2>1. Information We Collect</h2>
             <p>We collect the following types of information:</p>
             <ul>
-                <li>Personal Information: Name, email address, and any other details you provide during account registration.</li>
-                <li>Billing Information: All billing details are processed and stored by Stripe; we do not store any payment data on-site.</li>
-                <li>Technical Information: IP addresses, browser type, and device details, primarily for security and abuse prevention.</li>
+                <li>
+                    <strong>Personal Information:</strong> Name, email address, and any other details you provide during account registration.
+                </li>
+                <li>
+                    <strong>Billing Information:</strong> All billing details are processed and stored by Stripe; we do not store any payment data on-site.
+                </li>
+                <li>
+                    <strong>Technical Information:</strong> IP addresses, browser type, and device details, primarily for security and abuse prevention.
+                </li>
             </ul>
             
             <h2>2. How We Use Your Information</h2>
@@ -239,9 +272,15 @@
             <h2>3. How We Share Your Information</h2>
             <p>We do not sell or rent your information. However, we may share data with:</p>
             <ul>
-                <li>Payment Processors: Stripe handles all billing-related information.</li>
-                <li>Service Providers: Partners who help us operate and maintain our services.</li>
-                <li>Legal Authorities: When required by law or to protect our rights.</li>
+                <li>
+                    <strong>Payment Processors:</strong> Stripe handles all billing-related information.
+                </li>
+                <li>
+                    <strong>Service Providers:</strong> Partners who help us operate and maintain our services.
+                </li>
+                <li>
+                    <strong>Legal Authorities:</strong> When required by law or to protect our rights.
+                </li>
             </ul>
             
             <h2>4. Cookies and Tracking Technologies</h2>
