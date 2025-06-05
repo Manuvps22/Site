@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 10vw;
 }
 
 .posChild {
@@ -263,13 +264,46 @@
 }
 
 .sep {
-    transform: translateY(10px);
+    /* transform: translateY(100px); */
+    transform: translateY(-10vw);
+    width: 100vw; 
+    position: absolute; 
+    left: 0; 
+    z-index: 2;
+}
+
+.sep > svg {
+    margin-bottom: 10vw;
 }
 
 .body1 {
     background: var(--section);
     position: relative;
     z-index: 2;
+}
+
+.body1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--section);
+    filter: drop-shadow(50vw 0px 0px var(--section));
+    z-index: -1;
+}
+
+.body1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--section);
+    filter: drop-shadow(-50vw 0px 0px var(--section));
+    z-index: -1;
 }
 
 #info {
@@ -384,6 +418,13 @@
     align-items:center;
     margin-left: 130px;
     margin-right: 130px;
+    justify-content: space-between;
+}
+
+.hostWrap > div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
 .hostWrap > div > h2, .hostWrap > div > p2 {
@@ -700,15 +741,22 @@
 }
 
 .sep2 {
-    transform: translateY(-10px) rotate(180deg);
+    transform: translateY(-10vw) rotate(180deg);
     z-index: 4; 
-    position: relative;
+    position: absolute;
+    left: 0; 
+    width: 100vw; 
+}
+
+.sep2 > svg {
+    margin-bottom: 9vw;
 }
 
 .footMoonWrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10vw;
 }
 
 .footMoon {
