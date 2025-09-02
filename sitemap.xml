@@ -37,4 +37,22 @@
   <priority>0.60</priority>
   <changefreq>monthly</changefreq>
 </url>
+<url>
+  <loc>https://lunes.host/hosting/bot/</loc>
+  <lastmod>2025-09-02T15:51:30-06:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://lunes.host/hosting/website/</loc>
+  <lastmod>2025-09-02T15:51:30-06:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://lunes.host/hosting/game/</loc>
+  <lastmod>2025-09-02T15:51:30-06:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
 </urlset>

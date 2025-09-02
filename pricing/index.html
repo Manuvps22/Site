@@ -105,6 +105,50 @@
     }
     </script>
     
+    <!-- JSON-LD: ItemList of Plans with Offers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "LS-1 Plan",
+          "description": "Unmetered CPU (fair use), 1GB RAM, 7GB storage.",
+          "brand": {"@type": "Brand", "name": "Lunes Host"},
+          "offers": {"@type": "Offer", "price": "1", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://lunes.host/pricing/"}
+        },
+        {
+          "@type": "Product",
+          "name": "LS-2 Plan",
+          "description": "Unmetered CPU (fair use), 2GB RAM, 14GB storage.",
+          "brand": {"@type": "Brand", "name": "Lunes Host"},
+          "offers": {"@type": "Offer", "price": "2", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://lunes.host/pricing/"}
+        },
+        {
+          "@type": "Product",
+          "name": "LS-3 Plan",
+          "description": "Unmetered CPU (fair use), 3GB RAM, 21GB storage.",
+          "brand": {"@type": "Brand", "name": "Lunes Host"},
+          "offers": {"@type": "Offer", "price": "3", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://lunes.host/pricing/"}
+        }
+      ]
+    }
+    </script>
+    
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "Can I host a Discord bot?","acceptedAnswer": {"@type": "Answer","text": "Yes. Node.js and Python bots run 24/7. Use our panel to deploy and manage environment variables."}},
+        {"@type": "Question","name": "Do you support website hosting?","acceptedAnswer": {"@type": "Answer","text": "Yes. Host static or simple dynamic sites with free SSL and SFTP. Bring your own domain."}},
+        {"@type": "Question","name": "Is this good for Minecraft servers?","acceptedAnswer": {"@type": "Answer","text": "Yes for lightweight setups. Choose higher RAM tiers for larger modpacks. DDoS protection is included."}}
+      ]
+    }
+    </script>
+    
     <!--Title-->
     <title>Pricing — Plans & Deals | Lunes Host</title>
     <!--Title-->
@@ -217,8 +261,15 @@
         <section id="plans">
             <!--Title-->
             <div class="comeUp">
+                <h1 class="plansTitle">Hosting Plans for <span class="gradTxt">Bots, Websites, and Games</span></h1>
                 <h2 class="plansTitle">Small Price In Exchange <br class="indent"/>for <span class="gradTxt">Strong Power</span></h2>
                 <p1 class="subTitle">We offer a wide range of affordable light strength compute hosting solutions to fit any budget.</p1>
+                <p class="subTitle" style="display:block;margin-top:8px;">
+                  Looking for specifics? 
+                  <a href="../hosting/bot/">Bot Hosting</a> • 
+                  <a href="../hosting/website/">Website Hosting</a> • 
+                  <a href="../hosting/game/">Game Hosting</a>
+                </p>
             </div>
 
             <!--Plans-->
@@ -406,8 +457,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="space"></div>
 
         <!--Additional Info-->
         <section id="moreInfo">
