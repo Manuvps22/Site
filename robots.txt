@@ -1,0 +1,5 @@
+# robots.txt for https://lunes.host/
+User-agent: *
+Allow: /
+
+Sitemap: https://lunes.host/sitemap.xml
